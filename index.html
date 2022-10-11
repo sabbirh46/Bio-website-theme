@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bio</title>
+   
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="vh-100 bg-dark text-light ">
+<!--Navigation-->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+<div class="container-fluid">
+<a href="" class="navbar-brand">
+    <span class="badge bg-danger shadow">Sabbir</span>
+</a>
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarMain"
+>
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarMain">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="z-index:10 ">
+<li class="nav-item"><a 
+    href="" 
+    class="nav-link active "
+    data-bs-toggle="collapse"
+    data-bs-target=".multi-collapse"
+    aria-expanded="false"
+    aria-controls="about contact"
+
+    >Info</a></li>
+<li class="nav-item"><a 
+    href="#about"
+    role="button"
+    class="nav-link active "
+    data-bs-toggle="collapse"
+    
+    aria-expanded="false"
+    aria-controls="about"
+    >About</a></li>
+<li class="nav-item"><a 
+    href="#contact"
+    role="button"
+    class="nav-link active"
+    data-bs-toggle="collapse"
+    
+    aria-expanded="false"
+    aria-controls="contact"
+    >Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<!--Header-->
+<header class="container fixed-top text-end mt-5">
+    <h1 class="display-1">
+        Hi. I am <span class="badge bg-secondary">Sabbir</span>
+    </h1>
+    <h2 class="display-3">Web developer</h2>
+    <!--Portfolio & Email Btn Group-->
+    <div class="btn-group">
+     <!--Profile Btn-->
+     <button class="btn btn-outline-danger text-uppercase" type="button" data-bs-toggle="offcanvas" data-bs-target="#portfolio"
+      aria-controls="portfolio">my portfolio</button>
+      <!--Email Btn-->
+      <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#email"
+      aria-controls="email"><i class="bi bi-envelope-open"></i></button>
+    </div>
+   <!--about & contact dropdown content-->
+   <div class="row mt-3">
+    <!--about-->
+    <div class="col-md-6 mt-3">
+<div class="collapse multi-collapse" id="about">
+<div class="card card-body text-start shadow bg-dark-transparent">
+    <h5 class="card-title text-danger"> About</h5>
+<div class="card-text">
+<h3 class="text-white-50 ms-3">Sabbir</h3>
+<ul class="list-unstyled ms-5">
+<li>CEO of menyhart media</li>
+<li>Full stack web developer</li>
+<li>Course teacher</li>
+<li>You tube content creator</li>
+</ul>
+</div>
+</div>
+</div>
+    </div>
+<!--contact-->
+<div class="col-md-6 mt-3">
+    <div class="collapse multi-collapse" id="contact">
+    <div class="card card-body text-start shadow bg-dark-transparent">
+        <h5 class="card-title text-danger">Contact</h5>
+    <div class="card-text">
+    <h3 class="text-white-50 ms-3"> Get in touch:</h3>
+    <ul class="list-unstyled ms-5">
+    <li><i class="bi bi-house me-2 text-danger"></i>City: Rajshahi</li>
+    <li><i class="bi bi-signpost me-2 text-danger"></i>Street: 21 jump str</li>
+    <li><i class="bi bi-telephone me-2 text-danger"></i>Phone: 01773964262</li>
+    <li><i class="bi bi-envelope me-2 text-danger"></i>Email: sabbircse146@gmail.com</li>
+    </ul>
+    </div>
+    </div>
+    </div>
+        </div>
+   </div>
+</header>
+<!--profile image-->
+<img src="sabbir.jpg" alt="profile-pic" class="position-absolute top-0 img-fluid profile-pic"style= "width:50%;">
+<!--portfolio offcanves content-->
+<div class="offcanvas offcanvas-start bg-dark" id="portfolio"
+tabindex="-1"
+aria-labelledby="offcanvasPortfolioLabel"
+>
+<div class="offcanvas-header">
+    <h1 class="offcanvas-title text-danger">
+Portfolio
+    </h1>
+    <button class="btn-close btn-close-white"
+    data-bs-dismiss="offcanvas"
+    aria-label="close"
+    >
+
+    </button>
+
+</div>
+<div class="offcanvas-body">
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae expedita placeat voluptate doloribus tenetur neque, quia rerum iste earum beatae fugit voluptates facere adipisci repellendus nulla quasi obcaecati vitae saepe.</p>
+<ul class="list-group">
+    <a href=""
+    class="list-group-item list-group-item-danger list-group-item-action mb-2"
+    ><i class="bi bi-globe2"></i>Bio website theme</a>
+    <a href=""
+    class="list-group-item list-group-item-danger list-group-item-action mb-2"
+    ><i class="bi bi-globe2"></i>Business directory website theme</a>
+    <a href=""
+    class="list-group-item list-group-item-danger list-group-item-action mb-2"
+    ><i class="bi bi-globe2"></i>Resume website theme</a>
+    <a href=""
+    class="list-group-item list-group-item-danger list-group-item-action mb-2"
+    ><i class="bi bi-globe2"></i>Photo sharing website</a>
+    <a href=""
+    class="list-group-item list-group-item-danger list-group-item-action mb-2"
+    ><i class="bi bi-globe2"></i>E-Commerce website</a>
+</ul>
+</div>
+
+</div>
+<!--Mail offcanves content-->
+<div class="offcanvas offcanvas-bottom bg-dark"
+tabindex="-1"
+id="email"
+aria-labelledby="offcanvasEmaillabel"
+style="height:50vh"
+>
+<div class="offcanvas-header">
+    <h1 class="offcanvas-title text-danger" id="offcanvasEmaillabel">
+Email
+    </h1>
+    <button class="btn-close btn-close-white"
+    data-bs-dismiss="offcanvas"
+    aria-label="close"
+    >
+
+    </button>
+</div>
+<div class="offcanvas-body d-flex w-75 flex-column m-auto">
+<form action="" class="w-100">
+    <div class="row">
+<div class="col">
+    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+</div>
+<div class="col">
+    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+</div>
+<div class="col-12 mt-3">
+   <textarea class="w-100" rows="8" placeholder="Write a message "></textarea>
+</div>
+    </div>
+    
+    <div class="col-12">
+<button type="submit" class="btn btn-outline-danger mt-3 w-100">
+Send
+</button>
+    </div>
+
+</form>
+</div>
+
+</div>
+ <!-- Footer -->
+ <footer class="w-100 fixed-bottom bg-dark-transparent text-lg-start text-md-center">
+<div class="row align-items-center p-3">
+<h2 class="col">10+ EXPERIENCE IN THIS GAME</h2>
+<i 
+class="bi bi-bootstrap-fill w-100 btn btn-danger rounded-3 col-md text-center py-2 mx-2 fs-4"
+></i>
+<!-- Social Icons -->
+<div class="col ms-2 text-muted mt-sm-4 fs-2">
+    <ul class="list-unstyled d-flex flex-row justify-content-around">
+    <li><a href=""><i class="bi bi-instagram text-white-50"></i></a></li>
+    <li><a href=""><i class="bi bi-linkedin text-white-50"></i></a></li>
+    <li><a href=""><i class="bi bi-github text-white-50"></i></a></li>
+    <li><a href=""><i class="bi bi-youtube text-white-50"></i></a></li>
+    <li><a href=""><i class="bi bi-twitter text-white-50"></i></a></li>
+    <li><a href=""><i class="bi bi-twitch text-white-50"></i></a></li>
+    </ul>
+    </div>
+</div>
+ </footer>
+   <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+</body>
+</html>
